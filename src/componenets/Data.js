@@ -116,7 +116,7 @@ const array = [0,0,0,0,0]
          <input type='submit' value='search' style={{width:'8%',height:'105px',fontSize:'20px',marginRight:'1%'}} onClick={foundMovie}/>
          <div style={{fontSize:'20px' ,  display:'flex' , alignItems:'center' ,margin:'5px'}}> {arrStars} </div>
       
-         <input type='submit' value='add movie' style={{width:'21%',height:'105px', backgroundColor:'green',color:'white',fontSize:'20px',borderRadius:'9px' }} onClick={ajoutFilm}/>
+         <input type='submit' value='+' style={{width:'21%',height:'105px', backgroundColor:'green',color:'white',fontSize:'20px',borderRadius:'9px' }} onClick={ajoutFilm}/>
 
       </div>
 
