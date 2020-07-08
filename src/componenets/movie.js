@@ -2,9 +2,17 @@ import React from 'react'
 
 function Movie(props) {
 
+const arr =[1,1,1,1,1] ;
+
     console.log(props);
 
     const {movie} = props ;
+
+    const number = movie.Rate ;
+
+ 
+
+      const arr2 =  arr.map ((num,index)=> ( index<number ?  num = 1 : num = 0  ) )
 
     return (
         
@@ -14,7 +22,12 @@ function Movie(props) {
              <div>
              <p style={{margin:'5px', fontSize:'30px' , textAlign:'left'}} >Title : {movie.name} </p>
 
-             <h1 style={{textAlign:'end', color:'red' , marginRight:'5px'}}> {movie.Rate} </h1> </div>
+             <div style={{display:'flex'}} >  {  arr2.map((element)=> (element=='1' ?  <span style={{color:'#ffa64d',margin:'5px' }} class="fa fa-star"></span> : <span style={{margin:'5px'}} class="fa fa-star"></span> ) 
+  )                  
+             }
+             
+              </div> 
+             </div>
          </div>
         
     )
